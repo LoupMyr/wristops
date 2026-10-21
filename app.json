@@ -1,0 +1,65 @@
+{
+  "configVersion": "v2",
+  "app": {
+    "appId": 20715,
+    "appName": "WristOps",
+    "appType": "app",
+    "version": {
+      "code": 1,
+      "name": "1.0.0"
+    },
+    "icon": "icon.png",
+    "vender": "zepp",
+    "description": "Monitoring CI/API/sites depuis le poignet"
+  },
+  "permissions": [
+    "device:os.local_storage"
+  ],
+  "runtime": {
+    "apiVersion": {
+      "compatible": "2.1.0",
+      "target": "2.1.0",
+      "minVersion": "2.1.0"
+    }
+  },
+  "targets": {
+    "320x380-amazfit-bip-5": {
+      "module": {
+        "page": {
+          "pages": [
+            "page/home/home",
+            "page/list/list",
+            "page/detail/detail",
+            "page/confirm/confirm"
+          ]
+        },
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        }
+      },
+      "platforms": [
+        {
+          "name": "Altai",
+          "deviceSource": 8454400
+        },
+        {
+          "name": "AltaiW",
+          "deviceSource": 8454401
+        }
+      ],
+      "designWidth": 320
+    }
+  },
+  "i18n": {
+    "en-US": {
+      "appName": "WristOps"
+    },
+    "fr-FR": {
+      "appName": "WristOps"
+    }
+  },
+  "defaultLanguage": "en-US"
+}
